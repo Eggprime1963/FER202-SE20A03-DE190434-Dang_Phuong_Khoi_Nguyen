@@ -5,6 +5,11 @@
 .github/
 PE/
 
+# Exclude Slot 4-20
+Slot [4-9]/
+Slot 1[0-9]/
+Slot 20/
+
 # Exclude GitHub instructions file (for internal use only)
 GITHUB_INSTRUCTIONS.md
 
