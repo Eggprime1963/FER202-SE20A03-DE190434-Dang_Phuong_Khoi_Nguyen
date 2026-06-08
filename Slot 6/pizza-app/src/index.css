@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  background-color: #343a40; /* Dark gray matching the background */
+  font-family: 'Roboto', sans-serif;
+}
+
+.serif-font {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Navbar */
+.custom-navbar {
+  background-color: #212529 !important; /* Slightly darker than body */
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+.navbar-brand {
+  color: #fff !important;
+  letter-spacing: 0.5px;
+}
+
+.nav-link {
+  color: #adb5bd !important;
+  font-size: 0.9rem;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: #fff !important;
+}
+
+.search-form {
+  max-width: 300px;
+}
+
+.search-form .form-control {
+  font-size: 0.85rem;
+}
+
+.search-btn {
+  background-color: #dc3545 !important;
+  border-color: #dc3545 !important;
+}
+
+/* Carousel */
+.hero-carousel-item {
+  height: 60vh;
+  min-height: 400px;
+  position: relative;
+}
+
+.hero-carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.3); /* dark overlay */
+}
+
+.hero-img {
+  object-fit: cover;
+  height: 100%;
+}
+
+.hero-caption {
+  z-index: 10;
+  bottom: 20%;
+}
+
+.hero-caption h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero-caption p {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+
+/* Menu Cards */
+.menu-card {
+  background-color: #fff;
+}
+
+.card-img-container {
+  height: 220px;
+  overflow: hidden;
+}
+
+.card-img-container img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.badge-custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  padding: 4px 12px;
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+
+.menu-title {
+  color: #333;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.buy-btn {
+  background-color: #343a40 !important;
+  border-color: #343a40 !important;
+  color: #fff !important;
+  font-size: 0.9rem;
+  padding: 8px 0;
+}
+
+.buy-btn:hover {
+  background-color: #23272b !important;
+}
+
+/* Forms */
+.booking-form .form-control,
+.booking-form .form-select {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
+.booking-form .form-control::placeholder {
+  color: #6c757d;
+}
+
+.bg-warning-custom {
+  background-color: #ffc107 !important;
+}
+
+.bg-warning-custom:hover {
+  background-color: #e0a800 !important;
+}
+
+/* Utility to ensure carousel controls show above overlay */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 15;
+}
